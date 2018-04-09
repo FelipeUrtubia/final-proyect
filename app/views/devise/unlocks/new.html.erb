@@ -1,0 +1,17 @@
+<br>
+<h2>Reenviar las instrucciones de desbloqueo</h2>
+<br>
+<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :Email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+  <br><br>
+  <div class="actions">
+    <%= f.submit "Reenviar instrucciones!" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

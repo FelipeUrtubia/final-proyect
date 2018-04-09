@@ -1,0 +1,39 @@
+<div id="ProductosPopulares" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#ProductosPopulares" data-slide-to="0" class="active"></li>
+    <li data-target="#ProductosPopulares" data-slide-to="1"></li>
+    <li data-target="#ProductosPopulares" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner text-center">
+    <div class="carousel-item active">
+      <%= image_tag('test-5.jpg', alt: 'Test-5', class: 'd-inline', size: '450x300')%>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lorem ipsum</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag('test-6.jpg', alt: 'Test-6', class: 'd-inline', size: '450x300')%>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lorem ipsum</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag('test-7.jpg', alt: 'Test-7', class: 'd-inline', size: '450x300')%>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lorem ipsum</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#ProductosPopulares" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#ProductosPopulares" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+</div>

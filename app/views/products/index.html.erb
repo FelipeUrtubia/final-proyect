@@ -1,0 +1,34 @@
+<br><br>
+<h2>Bienvenido a la chanchita Online!</h2>
+<br>
+<div class="container">
+  <h4>Aquí podras ver una serie de productos destacados</h4>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-sm 6">
+    <%= render 'shared/carousel1'%>
+  </div>
+  <div class="col-sm 6">
+    <%= render 'shared/carousel2'%>
+  </div>
+</div>
+<br><br>
+<div class="container row">
+  <% @products.each do |product|%>
+    <div class="col-sm-3">
+      <div class="card">
+        <%= image_tag product.photo%>
+        <div class="card-body text-center">
+          <h5 class="card-title"><%= product.name%></h5>
+          <p class="card-text"><%= product.description%></p>
+          <%= link_to product_orders_path(product), class: "btn btn-primary", method: :post do%>
+            <i class="fas fa-shopping-cart"></i>
+            <p>Agregar al carrito</p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+</div>
