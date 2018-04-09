@@ -13,5 +13,5 @@ Product.destroy_all
   name: Faker::Commerce.product_name,
   price: Faker::Commerce.price.to_i,
   description: "Descripcion del objeto #{i}",
-  photo: "https://picsum.photos/400/200?image=#{i + 1}")
+  photo: "https://picsum.photos/400/200?image=#{i + 32}")
 end
